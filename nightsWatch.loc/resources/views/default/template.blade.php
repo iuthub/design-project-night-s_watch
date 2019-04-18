@@ -7,6 +7,7 @@
 	<title>Wine&Dine</title>
 
 	<!-- download fonts from google-fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:400,700' rel='stylesheet' type='text/css'> -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- take fontawesome cdn online -->

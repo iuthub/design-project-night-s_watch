@@ -44,6 +44,9 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
+section,main,header,footer{
+	position: relative;
+}
 a {
   color: #66C7CD;
   text-decoration: none;
@@ -100,13 +103,27 @@ select {
   text-transform: none;
 }
 /*-------------------------------------------------Header---------------------------------------------- */
-
+.btn-link{
+	color: #fff;
+	font-family:  'Times New Roman';
+	font-size: 18px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	background-color: #E7A331;
+}
+.btn-link:hover{
+	background-color: #E7A331;
+	text-decoration: underline;
+	color: #fff;
+}
 .header{
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
 	margin: 0;
 	padding: 0;
 }
@@ -133,11 +150,11 @@ select {
 	padding-right: 10px;
 	font-size: 20px;
 	color: #E7A331;
-	transition: all .3s ease;
+	transition: all .35s ease;
 }
 .social a i:hover{
 	color: #39a7ae;
-	transition: all .3s ease;
+	transition: all .35s ease;
 }
 .menu-bottom{
 	font-size: 18px;
@@ -187,27 +204,87 @@ select {
 	top: 0;
 	width: 100%;
 	background-color: rgba(18,20,22,.9);
+	z-index: 9;
 }
-.rest-info{
+.foodie-restaurant{
 	color: #fff;
 	text-align: center;
 	height: 500px;
 	position: relative;
 
 }
-.rest-info h1,.rest-info a,.rest-info p{
+.foodie-restaurant h1,.foodie-restaurant a,.foodie-restaurant p{
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.rest-info p{
-	padding-top: 20px;
-	top: 60%;
+.foodie-restaurant p{
+	padding-top: 10%;
+	width: 100%;
+	top: 70%;
 }
-.rest-info a{
-	top:70%;
-	padding-top: 20px;
+.foodie-restaurant a{
+	top:90%;
+	margin-top: 10%;
+	font-size: 22px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 10px 40px;
+	background-color: transparent;
 }
-/*-------------------------------------------------/Header--------------------------------------------- */
+.foodie-restaurant a:hover{
+	background-color: #E7A331;
+	text-decoration: none;
+}
+.foody-title{
+	font-family: 'Pacifico',cursive;
+	font-size: 120px;
+	white-space: nowrap;
+}
+.foody-txt{
+	font-family: 'Times New Roman';
+	font-size: 24px;
+}
+/*-------------------------------------------------/header--------------------------------------------- */
+
+/*---------------------------------------------section('about')---------------------------------------- */
+
+.about{
+	padding: 100px 0 100px 0;
+	background-repeat: repeat;
+	background-position: center;
+	background-color: ;
+}
+.interior{
+	display: block;
+	/*width: 100%;*/
+	width: 422px;
+	height: auto;
+}
+.about-info{
+	font-family: 'Times New Roman';
+	font-size: 17px;	
+	color: #4A4A4A;
+}
+.about-interior{
+	padding: 0;
+	width: 100%;
+}
+.about-title{
+	color: #000;
+	font-family: 'Pacifico';
+}
+.about-subtitle{
+	color: #000;
+	font-weight: bold;
+}
+.about-pepper{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+}
+
+/*--------------------------------------------/section('about')---------------------------------------- */
