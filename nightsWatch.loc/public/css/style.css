@@ -1,3 +1,4 @@
+/*------------------------------------Very Basic Style------------------------------*/
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -8,13 +9,17 @@ html {
 }
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-color: #fff;
+}
+*::selection {
+    color: #000;			/* color of text when selected */
+    background: #E7A331;
 }
 hr {
   -webkit-box-sizing: content-box;
@@ -37,7 +42,6 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 ol ol,
 ul ul,
 ol ul,
@@ -104,17 +108,19 @@ select {
 }
 /*-------------------------------------------------Header---------------------------------------------- */
 .btn-link{
+	font-family: 'Montserrat';
 	color: #fff;
-	font-family:  'Times New Roman';
 	font-size: 18px;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	border-radius: 5px;
 	background-color: #E7A331;
+	transition: all .35s ease;
 }
 .btn-link:hover{
-	background-color: #E7A331;
+	background-color: #BF8015;
 	text-decoration: underline;
 	color: #fff;
+	transition: all .35s ease;
 }
 .header{
 	height: 100vh;
@@ -140,8 +146,9 @@ select {
 	padding: 10px 0 10px 0;
 	color: #474747;
 	font-size: 18px;
-	background-color: #fff;
 	text-align: center;
+	background-repeat: repeat;
+	background-position: center;
 }
 .social{
 	
@@ -231,7 +238,7 @@ select {
 	font-size: 22px;
 	border: 2px solid #fff;
 	border-radius: 10px;
-	padding: 10px 40px;
+	padding: 10px 30px;
 	background-color: transparent;
 }
 .foodie-restaurant a:hover{
@@ -264,7 +271,6 @@ select {
 	height: auto;
 }
 .about-info{
-	font-family: 'Times New Roman';
 	font-size: 17px;	
 	color: #4A4A4A;
 }
@@ -277,6 +283,7 @@ select {
 	font-family: 'Pacifico';
 }
 .about-subtitle{
+	font-family: 'Times New Roman';
 	color: #000;
 	font-weight: bold;
 }
@@ -285,6 +292,134 @@ select {
 	display: block;
 	bottom: 0;
 	right: 0;
+	z-index: 1;	
+}
+.about-spagetti{
+	position: absolute;
+	display: block;
+	bottom: -170px;
+	left: 0;
+	z-index: 1;	
 }
 
 /*--------------------------------------------/section('about')---------------------------------------- */
+
+/*--------------------------------------------section('taste')---------------------------------------- */
+
+.taste{
+	padding: 135px 100px 180px 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+    border-bottom: 1px solid #000;
+}
+.taste-recipes{
+	background-repeat: repeat;
+	background-position: center;
+	padding: 50px 40px;
+}
+.about-txt{
+	font-family: 'Ubuntu',sans-serif;
+	padding-bottom: 35px;
+}
+/*--------------------------------------------/section('taste')---------------------------------------- */
+
+/*--------------------------------------------footer('footer')---------------------------------------- */
+.footer{
+	padding: 90px 0;
+	background-repeat: repeat;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    font-family: serif;
+    font-size: 16px;
+}
+.footer .plate{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 15%;
+}
+.footer .plate2{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 25%;
+}
+.footer-info{
+	text-align: center;
+}
+.footer-info p{
+	padding: 0;
+	margin: 0;
+}
+.footer .footer-info-title{
+	font-size: 30px;
+	font-family: 'Pacifico',sans-serif;
+	padding-bottom: 60px;
+}
+.contact{
+	padding-top: 23px;
+	padding-bottom: 100px;
+}
+.phone{
+	color: #E7A331;
+	transition: all .35s ease;
+}
+.phone:hover{
+	color: #39a7ae;
+	transition: all .35s ease;
+}
+.contact i{
+	padding-right: 5px;
+	font-size: 18px;
+}
+.social a i{
+	padding-right: 10px;
+	font-size: 20px;
+	color: #E7A331;
+	transition: all .35s ease;
+}
+.social a i:hover{
+	color: #39a7ae;
+	transition: all .35s ease;
+}
+.feedback{
+}
+.feedback .footer-info-title{
+	padding: 0;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.form .form-group input{
+	width: 100%;
+	background-color: #323232;
+	outline: 0;
+	border:none;
+}
+textarea.form-field{
+	background-color: #323232;	
+	outline: 0;
+	border:none;
+}
+textarea.form-field:focus{
+	background-color: #323232;
+}
+.form .form-field:focus{
+	border-color: #E7A331;
+	box-shadow: 0 0 0 0.2rem rgba(231,163,49,.75);
+}
+.form .form-field-submit{
+	width: auto;
+	outline: 0;
+	border:none;
+	padding-bottom: 35px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: all .35s ease;
+}
+.form .form-field-submit:hover{
+	transition: all .35s ease;
+}
+/*--------------------------------------------/footer('footer')---------------------------------------- */

@@ -3,7 +3,10 @@
 @section('header')
 
 <header class="header" style="background-image: url('img/home.jpg');">
-	<a href="index.html"><img class="logo" src="img/logo.png" alt="Wine&Dine logo"></a>
+	<img class="logo" src="img/logo.png" alt="Wine&Dine logo" usemap="#planetmap">
+	<map name="planetmap">
+  		<area shape="rect" coords="100,0,350,150" alt="Sun" href="#">
+	</map>
 	@include('partials.header')
 	<div class="container">
 		<div class="row">
@@ -44,6 +47,28 @@
 				</div>
 			</div>
 			<img class="about-pepper" src="img/pepper.png" alt="">
+			<img class="about-spagetti" src="img/spagetti.png" alt="">
+		</div>
+	</div>
+</section>
+
+<section class="taste" style="background-image: url('img/taste.jpg');">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="taste-recipes" style="background-image: url('img/background.jpg');">
+					
+					<h1 class="about-title">Special Recipes</h1>
+					<h1 class="about-subtitle">TASTE OF PRECIOUS</h1>
+					<p class="about-txt">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan
+						<br><br>
+						dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 
+					</p>
+					<a href="#" class="btn-link">Click here</a>
+				</div>
+			</div>
+			<div class="col-lg-6"></div>
 		</div>
 	</div>
 </section>
