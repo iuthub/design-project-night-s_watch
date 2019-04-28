@@ -1,5 +1,12 @@
 @extends('default.template')
 
+@section('preloader')
+	
+	 <!--Poreloader-->
+	 <div class="preloader"><div class="pulse"></div></div>
+
+@endsection
+
 @section('header')
 
 <header class="header" style="background-image: url('img/home.jpg');">

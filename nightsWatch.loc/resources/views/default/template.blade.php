@@ -23,6 +23,8 @@
 <![endif]-->
 </head>
 <body>
+	@yield('preloader')
+
 	@yield('header')
 	
 	
