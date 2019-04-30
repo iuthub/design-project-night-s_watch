@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <div class="signup-form">
         <form role="form" method="post" action="{{ route('auth.signup') }}">
             <h2>Sign Up</h2>
