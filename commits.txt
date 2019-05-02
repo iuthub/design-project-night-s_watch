@@ -1,0 +1,4 @@
+31-commit "Ziyodilla"
+I have added menu page. Everything is working properly, except design. We still have some minor problems in design.
+SignUp, SignIns should be reviewed. It is unconvenient for consumers and useless, we have to make it for admins only.
+!Important: Dishes for menu page can be added only through non user interfaces like tinker, phpmyadmin ... 
