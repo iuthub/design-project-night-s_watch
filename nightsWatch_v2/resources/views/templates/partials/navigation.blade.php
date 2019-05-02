@@ -27,12 +27,12 @@
                 <nav class="menu-bottom">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="offset-lg-5 col-lg-7">
+                            <div class="offset-lg-4 col-lg-8">
                                 <ul class="nav-menu">
-                                    <li class="nav-menu-item"><a href="#">Home</a></li>
+                                    <li class="nav-menu-item"><a href="/">Home</a></li>
                                     <li class="nav-menu-item"><a href="#">About Us</a></li>
-                                    <li class="nav-menu-item"><a href="#">Menu</a></li>
-                                    <li class="nav-menu-item-book"><span><a href="#">Table Booking</a></span></li>
+                                    <li class="nav-menu-item"><a href="/menu">Menu</a></li>
+                                    <li class="nav-menu-item-book"><span><a href="#" class="booking_btn">Table Booking</a></span></li>
                                     <!-- <li class="nav-menu-item-login"><a href="#">Login</a></li> -->
                                     @if (Auth::check())
                                     <li class="nav-menu-item-login"><a href="#">{{ Auth::user()->getNameOrUsername() }}</a></li>

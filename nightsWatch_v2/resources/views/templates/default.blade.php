@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wine&Dine</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <!-- download fonts from google-fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Roboto|Ubuntu" rel="stylesheet">
     {{-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> --}}
