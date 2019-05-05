@@ -12,7 +12,7 @@ Shokirov Ismoil - u1710105
 Muslimov Akhmadjon - u1710152
 Mukhiddinov Ziyodilla - u1710090
 Akbarov Javokhir - u1710087
-Dadakhon - ??
+Ortikov Dadakhon - u1710025
 Khamraev Izzat - u1710026
 </pre>
 
