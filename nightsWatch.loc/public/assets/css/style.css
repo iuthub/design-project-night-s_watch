@@ -580,4 +580,63 @@ textarea.form-field:focus{
 .food-price h4 span{
 	color: #93C887;
 }
+.menu-date{
+	text-align: left;
+	padding-left: 20px;
+}
+.menu-date span{
+	color: #218838;
+}
 /*--------------------------------------------/menus page('/.food-menu')---------------------------------------- */
+
+@media only screen and (max-width : 1200px) {
+	.logo{
+		display: none;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.nav-menu-item{
+		padding-right: 10px;
+	}
+	.menu-bottom{
+		font-size: 14px;
+	}
+	.foody-title{
+		font-size: 40px;
+	}
+	.foody-txt{
+		font-size: 15px;
+	}
+	.nav-menu span a{
+		padding: 5px 10px 5px 10px;
+	}
+	.nav-menu li{
+		padding-right: 10px;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.taste-recipes{
+		padding: 10px;
+	}
+	.interior{
+		width: 100%;
+	}
+	.taste{
+		padding: 30px 0;
+	}
+}
+@media only screen and (min-width: 320px){
+
+}

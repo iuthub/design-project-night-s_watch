@@ -28,12 +28,12 @@
 						<div class="row">
 							<div class="offset-lg-5 col-lg-7">
 								<ul class="nav-menu">
-									<li class="nav-menu-item"><a href="#">Home</a></li>
-									<li class="nav-menu-item"><a href="#">About us</a></li>
-									<li class="nav-menu-item"><a href="#">Menu</a></li>
+									<li class="nav-menu-item"><a href="{{ route('index') }}">Home</a></li>
+									<li class="nav-menu-item"><a href="{{ route('about') }}">About us</a></li>
+									<li class="nav-menu-item"><a href="{{ route('menu') }}">Menu</a></li>
 									<li class="nav-menu-item-book"><span><a href="#">Table Booking</a></span></li>
-									<li class="nav-menu-item-login"><a href="#">Login</a></li>
-									<li class="nav-menu-item-cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+									<li class="nav-menu-item-login"><a href="{{ route('admin') }}">Login</a></li>
+									{{-- <li class="nav-menu-item-cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li> --}}
 								</ul>
 							</div>
 						</div>

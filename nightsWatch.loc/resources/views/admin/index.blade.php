@@ -9,7 +9,7 @@
     	@foreach ($columns as $column)
       		<th scope="col">{{ $column }}</th>
     	@endforeach
-      		<th scope="col">Edit</th>
+      		<th scope="col" colspan="2">Edit</th>
     </tr>
   </thead>
   
@@ -28,9 +28,13 @@
 			<td>{{$food->updated_at}}</td>
 			<td>{{$food->user_id}}</td>
 			<td>
-				<form action="{{ route('menusEdit',['food'=>$food->id]) }}" class="form-horizontal" method="post">
+				<a class="btn btn-info" href="{{ route('menusEdit',['menu'=>$food->id]) }}">Edit</a>
+			</td>
+			<td>
+				<form action="{{ route('menusEdit',['menu'=>$food->id]) }}" class="form-horizontal" method="post">
 					{{ csrf_field() }}
-					<input type="hidden" name="action" value="delete">
+					{{-- <input type="hidden" name="_method" value="DELETE"> --}}
+					{{ method_field('DELETE') }}
 					<input type="submit" value="Delete" class="btn btn-danger">
 				</form>
 			</td>
@@ -40,6 +44,8 @@
   </tbody>
 </table>
 
-<a style="margin-left: 50px;" class="btn btn-info" href="{{ route('menusAdd') }}">Add new Food</a>
+<a style="margin-left: 50px; margin-bottom: 100px;" class="btn btn-info" href="{{ route('menusAdd') }}">Add new Food</a>
+<a href="{{ route('index') }}" class="btn btn-warning" style="float: right; margin-right: 50px;"> Home Page </a>
+<a href="{{ route('menu') }}" class="btn btn-success" style="float: right; margin-right: 50px;"> Menus Page </a>
 
 @endsection

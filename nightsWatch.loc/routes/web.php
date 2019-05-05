@@ -32,7 +32,7 @@ Route::get('/',['uses'=>'IndexController@execute','as'=>'index']);
 
 Route::get('/about', function () {
     return view('layouts.about');
-});
+})->name('about');
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
 
@@ -43,14 +43,14 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
 
 		return view('admin.index')->with(['foods'=>$foods,'columns'=>$columns]);
 
-	});
+	})->name('admin');
 
 });
 
 Route::match(['post','get'],'/menus/add',['uses'=>'MenusAddController@execute','as'=>'menusAdd']);
 Route::match(['post','get','delete'],'/menus/edit/{menu}',['uses'=>'MenusEditController@execute','as'=>'menusEdit']);
 
-Route::get('/menu',['uses'=>'MenusController@execute','as'=>'menus']);
+Route::get('/menu',['uses'=>'MenusController@execute','as'=>'menu']);
 
 Auth::routes();
 

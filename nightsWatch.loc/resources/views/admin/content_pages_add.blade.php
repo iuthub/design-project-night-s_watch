@@ -1,5 +1,5 @@
 <div class="wrapper container-fluid">
-
+<h1 class="alert-info"><?= $data['title'] ?></h1>
 	<form action="{{ route('menusAdd') }}" class="form-horizontal" method="post" enctype="multipart/form-data">
 		{{ csrf_field() }}
 	
@@ -24,12 +24,10 @@
 
 		<div class="form-group">
 			<input type="submit" class="btn btn-success" value="Submit">
+
+			<a href="{{ route('index') }}" class="btn btn-secondary" style="float: right;">Go to Home Page</a>
 		</div>
 
 	</form>
-	
-	<script>
-		CKEDITOR.replace('editor');
-	</script>
 
 </div>

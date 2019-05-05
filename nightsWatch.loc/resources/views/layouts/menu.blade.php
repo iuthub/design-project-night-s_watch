@@ -10,7 +10,7 @@
 			
 			@foreach ($foods as $food)
 
-			<div class="col-md-4">
+			<div class="col-md-4" style="margin-bottom: 50px;">
 				
 				<div class="menu-card">
 
@@ -28,6 +28,7 @@
 					</di --}}
 					<div class="food-price">
 						<h4 class="btn btn-danger">Price: <span> {{ $food->price }}$</span></h4>
+						<p class="menu-date"><span class="bs">Created at:</span> {{ $food->created_at }}</p>
 					</div>
 				</div>
 			</div>

@@ -62,7 +62,7 @@
 <section class="taste" style="background-image: url('{{ asset('assets/img/taste.jpg')}}');">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-sm-12">
 				<div class="taste-recipes" style="background-image: url('{{ asset('assets/img/background.jpg')}}');">
 					
 					<h1 class="about-title">Special Recipes</h1>

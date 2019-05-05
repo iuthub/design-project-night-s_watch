@@ -36,13 +36,14 @@ class MenusAddController extends Controller
     		}
 
             $price = floatval($input['price']);
-        DB::insert('INSERT INTO `menus` (`name`,`price`,`img`,`text`) VALUES (?,?,?,?)',
+            DB::insert('INSERT INTO `menus` (`name`,`price`,`img`,`text`) VALUES (?,?,?,?)',
                         [
                             $input['name'],
                             $price,
                             $input['images'],
                             $input['text']
                         ]);
+            return redirect('admin')->with('status','Page added successfully!');
 
     	}
 
@@ -52,7 +53,7 @@ class MenusAddController extends Controller
     		$data = [
     					'title' => 'New Menu'
     				];
- 			return view('admin.pages_add');
+ 			return view('admin.pages_add')->with(['data'=>$data]);
     	}
     	abort(404);
     }
