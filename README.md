@@ -1,6 +1,18 @@
-# Internet Programming: Design Project Assignment
+<h1 align="center">Internet Programming: Design Project Assignment</h1>
+<br>
+<p align="center">*Our Logo Here*</p>
+<br>
 
-Find `ip_design_project.pdf` file in this folder, and refer to all the instructions given there. 
+`PROJECT NAME:` &nbsp; *Wine&Dine*
 
-You have to submit your project into this repository before 05.05.2019 (midnight).
+`TEAM MEMBERS:`
+<pre>
+
+Shokirov Ismoil - u1710105
+Muslimov Akhmadjon - u1710152
+Mukhiddinov Ziyodilla - u1710090
+Akbarov Javokhir - u1710087
+Ortikov Dadakhon - u1710025
+Khamraev Izzat - u1710026
+</pre>
 

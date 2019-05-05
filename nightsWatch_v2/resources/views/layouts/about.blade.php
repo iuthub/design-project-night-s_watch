@@ -1,7 +1,7 @@
-@extends('templates.default')
+@extends('default.template')
 
-@include('templates.partials.navigation')
+@include('partials.header')
 
 @section('content')
-About us
+	About us
 @endsection
