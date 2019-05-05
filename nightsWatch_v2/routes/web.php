@@ -1,5 +1,4 @@
 <?php
-// use Illuminate\Routing\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,57 +10,48 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::group(['middleware'=>'web'],function (){
 
-/**
- * Home
- */
+// 	// Route::match(['post','get'],'/',['uses'=>'IndexController@execute','as'=>'home']);
 
-Route::get('/menu', 'MenuController@index');
+// 	Route::match(['post','get'],'/',function (){
+// 		return view('index');
+// 	});
+	
 
-Route::get('/', [
-    'uses' => '\Chatty\Http\Controllers\HomeController@index',
-    'as' => 'home',
-]);
 
-Route::get('/about', [
-    'uses' => '\Chatty\Http\Controllers\AboutController@about',
-    'as' => 'about',
-]);
+// });
+Route::get('/',['uses'=>'IndexController@execute','as'=>'index']);
 
-Route::get('/alert', function () {
-    return redirect()->route('home')->with('info', 'You Have Signed Up!');
+// Route::resource('/menus','MenusController',['only'=>['index']);
+
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/about', function () {
+    return view('layouts.about');
 });
 
-/**
- * Authentication
- */
+Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
 
-// Sign Up
-Route::get('/signup', [
-    'uses' => '\Chatty\Http\Controllers\AuthController@getSignup',
-    'as' => 'auth.signup',
-    'middleware' => ['guest'],
-]);
+	Route::get('/',function (){
 
-Route::post('/signup', [
-    'uses' => '\Chatty\Http\Controllers\AuthController@postSignup',
-    'middleware' => ['guest'],
-]);
+		$foods = DB::select("SELECT * FROM `menus`");
+		$columns = Schema::getColumnListing('menus');
 
-// Sign In
-Route::get('/signin', [
-    'uses' => '\Chatty\Http\Controllers\AuthController@getSignin',
-    'as' => 'auth.signin',
-    'middleware' => ['guest'],
-]);
+		return view('admin.index')->with(['foods'=>$foods,'columns'=>$columns]);
 
-Route::post('/signin', [
-    'uses' => '\Chatty\Http\Controllers\AuthController@postSignin',
-    'middleware' => ['guest'],
-]);
+	});
 
-// Signout
-Route::get('/signout', [
-    'uses' => '\Chatty\Http\Controllers\AuthController@getSignout',
-    'as' => 'auth.signout',
-]);
+});
+
+Route::match(['post','get'],'/menus/add',['uses'=>'MenusAddController@execute','as'=>'menusAdd']);
+Route::match(['post','get','delete'],'/menus/edit/{menu}',['uses'=>'MenusEditController@execute','as'=>'menusEdit']);
+
+Route::get('/menu',['uses'=>'MenusController@execute','as'=>'menus']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
