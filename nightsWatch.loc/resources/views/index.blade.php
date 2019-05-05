@@ -9,8 +9,8 @@
 
 @section('header')
 
-<header class="header" style="background-image: url('img/home.jpg');">
-	<img class="logo" src="img/logo.png" alt="Wine&Dine logo" usemap="#planetmap">
+<header class="header" style="background-image: url('{{ asset('assets/img/home.jpg') }}');">
+	<img class="logo" src="{{ asset('assets/img/logo.png') }}" alt="Wine&Dine logo" usemap="#planetmap">
 	<map name="planetmap">
   		<area shape="rect" coords="100,0,350,150" alt="Sun" href="#">
 	</map>
@@ -33,12 +33,12 @@
 
 @section('content')
 
-<section class="about" style="background-image: url('img/background.jpg');">
+<section class="about" style="background-image: url('{{ asset('assets/img/background.jpg') }}');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-5">
 				<div class="about-interior">
-					<img class="interior" src="img/interior.png" alt="Our restaurant">
+					<img class="interior" src="{{ asset('assets/img/interior.png') }}" alt="Our restaurant">
 				</div>
 			</div>
 			<div class="col-lg-7">
@@ -53,17 +53,17 @@
 					<a href="#" class="btn-link">Click here</a>
 				</div>
 			</div>
-			<img class="about-pepper" src="img/pepper.png" alt="">
+			<img class="about-pepper" src="{{ asset('assets/img/pepper.png')}}" alt="">
 			<img class="about-spagetti" src="img/spagetti.png" alt="">
 		</div>
 	</div>
 </section>
 
-<section class="taste" style="background-image: url('img/taste.jpg');">
+<section class="taste" style="background-image: url('{{ asset('assets/img/taste.jpg')}}');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="taste-recipes" style="background-image: url('img/background.jpg');">
+				<div class="taste-recipes" style="background-image: url('{{ asset('assets/img/background.jpg')}}');">
 					
 					<h1 class="about-title">Special Recipes</h1>
 					<h1 class="about-subtitle">TASTE OF PRECIOUS</h1>

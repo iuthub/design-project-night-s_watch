@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<nav class="menu-top" style="background-image: url('img/background.jpg')">
+				<nav class="menu-top" style="background-image: url('{{ asset('assets/img/background.jpg') }}')">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="offset-lg-4 col-lg-2"> <i></i> Order Foods 24/7</div>

@@ -1,7 +1,7 @@
-<footer class="footer" style="background-image: url('img/footer-backgr.jpg');">
+<footer class="footer" style="background-image: url('{{ asset('assets/img/footer-backgr.jpg') }}');">
 	<div class="container-fluid">
 		<div class="row">
-			<img class="plate" src="img/plate.png" alt="">
+			<img class="plate" src="{{ asset('assets/img/plate.png') }}" alt="">
 			<div class="col-lg-4">
 				<div class="footer-info">
 					<h1 class="footer-info-title">Take it easy with location</h1>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="col-lg-2"></div>
-			<img class="plate2" src="img/plate2.png" alt="">
+			<img class="plate2" src="{{ asset('assets/img/plate2.png') }}" alt="">
 		</div>
 	</div>
 </footer>
