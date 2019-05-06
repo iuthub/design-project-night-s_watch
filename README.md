@@ -16,3 +16,6 @@ Ortikov Dadakhon - u1710025
 Khamraev Izzat - u1710026
 </pre>
 
+`Project Link:` https://wineadndine.000webhostapp.com
+
+
