@@ -1,6 +1,6 @@
 <h1 align="center">Internet Programming: Design Project Assignment</h1>
 <br>
-<p align="center">*Our Logo Here*</p>
+<p align="center"><img src="futured-img.jpg" height='128px'></p>
 <br>
 
 `PROJECT NAME:` &nbsp; *Wine&Dine*
