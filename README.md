@@ -1,4 +1,5 @@
 <h1 align="center">Internet Programming: Design Project Assignment</h1>
+<h2 align="center">Web site name: "Wine & Dine"</h2>
 <br>
 <p align="center"><img src="futured-img.jpg" height='128px'></p>
 <br>
